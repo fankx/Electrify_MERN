@@ -46,6 +46,7 @@ const App = () => {
             <Route path='/admin/orderlist' element={<OrderListScreen />} />
             {/* exact means that this route will only match the exact path */}
             <Route exact path='/' element={<HomeScreen />} />{' '}
+            <Route path='/search/:keyword' element={<HomeScreen />} />{' '}
           </Routes>
         </Container>
       </main>

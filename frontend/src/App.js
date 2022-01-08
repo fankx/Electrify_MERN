@@ -40,13 +40,24 @@ const App = () => {
             <Route path='/admin/user/:id/edit' element={<UserEditScreen />} />
             <Route path='/admin/productlist' element={<ProductListScreen />} />
             <Route
+              exact
+              path='/admin/productlist/:pageNumber'
+              element={<ProductListScreen />}
+            />
+            <Route
               path='/admin/product/:id/edit'
               element={<ProductEditScreen />}
             />
             <Route path='/admin/orderlist' element={<OrderListScreen />} />
             {/* exact means that this route will only match the exact path */}
             <Route exact path='/' element={<HomeScreen />} />{' '}
-            <Route path='/search/:keyword' element={<HomeScreen />} />{' '}
+            <Route exact path='/search/:keyword' element={<HomeScreen />} />{' '}
+            <Route exact path='/page/:pageNumber' element={<HomeScreen />} />{' '}
+            <Route
+              exact
+              path='/search/:keyword/page/:pageNumber'
+              element={<HomeScreen />}
+            />{' '}
           </Routes>
         </Container>
       </main>

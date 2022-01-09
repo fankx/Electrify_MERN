@@ -200,7 +200,8 @@ const ProductScreen = () => {
                   {userInfo ? (
                     <Form onSubmit={submitReviewHandler}>
                       <Form.Group controlId='rating'>
-                        <Form.Label>Rating</Form.Label>
+                        <br />
+                        <Form.Label as='h5'>Rating</Form.Label>
                         <Form.Control
                           as='select'
                           value={rating}
@@ -214,8 +215,9 @@ const ProductScreen = () => {
                           <option value='5'>5 - Excellent</option>
                         </Form.Control>
                       </Form.Group>
+                      <br />
                       <Form.Group controlId='comment'>
-                        <Form.Label>Comment</Form.Label>
+                        <Form.Label as='h5'>Comment</Form.Label>
                         <Form.Control
                           as='textarea'
                           row='3'

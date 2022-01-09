@@ -16,8 +16,17 @@ h3 {
   padding: 1rem 0;
 }
 
+.navbar-brand {
+  text-align: center;
+  font-weight: bold;
+}
+
 .rating span {
   margin: 0.1rem;
+}
+
+select.form-control option {
+  background-color: #90b6f0cc;
 }
 
 /* carousel */

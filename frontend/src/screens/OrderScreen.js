@@ -48,10 +48,10 @@ const OrderScreen = () => {
   }
 
   useEffect(() => {
-    if (!userInfo.isAdmin) {
+    if (!userInfo) {
       navigate('/login');
     }
-    console.log('trigger use effect hook');
+
     const addPayPalScript = async () => {
       const { data: clientId } = await axios.get('/api/config/paypal');
       const script = document.createElement('script');

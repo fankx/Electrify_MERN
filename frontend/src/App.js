@@ -27,11 +27,11 @@ const App = () => {
         <Container>
           <Routes>
             <Route path='/login' element={<LoginScreen />} />
+            <Route path='/register' element={<RegisterScreen />} />
             <Route path='/shipping' element={<ShippingScreen />} />
             <Route path='/order/:id' element={<OrderScreen />} />
-            <Route path='/payment' element={<PaymentScreen />} />
             <Route path='/placeorder' element={<PlaceOrderScreen />} />
-            <Route path='/register' element={<RegisterScreen />} />
+            <Route path='/payment' element={<PaymentScreen />} />
             <Route path='/profile' element={<ProfileScreen />} />
             <Route path='/product/:id' element={<ProductScreen />} />
             <Route path='/cart' element={<CartScreen />} />
